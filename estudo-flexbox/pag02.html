@@ -9,12 +9,15 @@
         .container{
             background-color: bisque;
             display: flex;
-            flex-flow: row nowrap;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
+            flex-wrap: nowrap;
+            gap: 10px 20px;
             
 
             height: 800px;
+            padding: 10px;
         }
         div{
             height: 150px;
@@ -24,15 +27,19 @@
         }
         .bloco-1{
             background-color: rgb(156, 209, 191);
-            align-self: flex-start;
+            flex: 0 1 auto;
+    
             
         }
         .bloco-2{
             background-color: rgb(173, 89, 89);
+            align-self: flex-end
+            
             
         }
         .bloco-3{
             background-color: rgb(143, 177, 110);
+            
             
         }
     </style>
@@ -42,6 +49,7 @@
         <div class="bloco-1">1</div>
         <div class="bloco-2">2</div>
         <div class="bloco-3">3</div>
+        
        
     </main>
 </body>
